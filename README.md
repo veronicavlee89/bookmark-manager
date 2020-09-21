@@ -41,4 +41,9 @@ _So I can add new bookmarks_
 
 _I want to save a site title and address to the bookmark manager_
 
- 1. Set up Database in PostgreSQL (server that runs database)
+1. Set up Database in PostgreSQL (server that runs database)
+2. Create a table called bookmark_manager and store urls
+3. Create a SQL file in ./db/migrations
+4. Install PG gem
+5. Connect PG in the self.class - establish connection, check if all the tests pass
+  
