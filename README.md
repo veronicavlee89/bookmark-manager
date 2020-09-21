@@ -1,9 +1,9 @@
 # bookmark-manager
 
 # US 1
-As a user
-So I can access websites quickly
-I want to be able to see a list of bookmarks
+_As a user_
+_So I can access websites quickly_
+_I want to be able to see a list of bookmarks_
 
 
 1. User requests from Client - Client(Browser) sends GET request to Controller (app.rb)
