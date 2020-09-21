@@ -41,8 +41,4 @@ _So I can add new bookmarks_
 
 _I want to save a site title and address to the bookmark manager_
 
- 1. User requests from Client - Client(Browser) sends GET request to Controller (app.rb)
- 2. Controller (app.rb) asks the Class Bookmark to get all the bookmarks
- 3. Controller (app.rb) grabs the view of the bookmarks from Bookmark.erb
- 4. Bookmark.erb sends html to app.rb
- 5. App.rb sends the view to the Client - to User
+ 1. Set up Database in PostgreSQL (server that runs database)
