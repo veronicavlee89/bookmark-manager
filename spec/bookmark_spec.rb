@@ -1,16 +1,12 @@
 require 'bookmark'
 
 describe Bookmark do
-  subject(:bookmark) { Bookmark.new }
-  let(:list_bookmarks) do [
-      "https://www.google.com/",
-      "https://www.gmail.com/",
-  ]
-  end
 
-  describe '#all' do
-    it "prints a list of bookmarks" do
-    expect(subject.all).to eq :list_bookmarks
+  describe '.all' do
+    it "returns all available bookmarks" do
+      bookmarks = Bookmark.all #class method
+      expect(bookmarks).to include("https://www.google.com/")
+      expect(bookmarks).to include("https://www.gmail.com/")
     end
   end
 end
