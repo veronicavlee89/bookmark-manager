@@ -1,9 +1,8 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    ansi (1.5.0)
     ast (2.4.1)
     capybara (3.33.0)
       addressable
@@ -14,7 +13,6 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     diff-lcs (1.4.4)
-    docile (1.3.2)
     jaro_winkler (1.5.4)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -55,21 +53,11 @@ GEM
       unicode-display_width (>= 1.4.0, < 1.7)
     ruby-progressbar (1.10.1)
     ruby2_keywords (0.0.2)
-    simplecov (0.19.0)
-      docile (~> 1.1)
-      simplecov-html (~> 0.11)
-    simplecov-console (0.7.2)
-      ansi
-      simplecov
-      terminal-table
-    simplecov-html (0.12.2)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
-    terminal-table (1.8.0)
-      unicode-display_width (~> 1.1, >= 1.1.1)
     tilt (2.0.10)
     unicode-display_width (1.6.1)
     xpath (3.2.0)
@@ -81,9 +69,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   rspec
-  rubocop (= 0.79.0)
-  simplecov
-  simplecov-console
+  rubocop
   sinatra
 
 BUNDLED WITH

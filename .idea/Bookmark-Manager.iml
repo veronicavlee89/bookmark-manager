@@ -12,12 +12,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.7.0, RVM: ruby-2.7.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ansi (v1.5.0, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.1, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.4, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.33.0, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.4.4, RVM: ruby-2.7.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="docile (v1.3.2, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jaro_winkler (v1.5.4, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.2, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, RVM: ruby-2.7.0) [gem]" level="application" />
@@ -39,11 +37,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v0.79.0, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.10.1, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby2_keywords (v0.0.2, RVM: ruby-2.7.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.19.0, RVM: ruby-2.7.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="simplecov-console (v0.7.2, RVM: ruby-2.7.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="simplecov-html (v0.12.2, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sinatra (v2.1.0, RVM: ruby-2.7.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="terminal-table (v1.8.0, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.10, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.6.1, RVM: ruby-2.7.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, RVM: ruby-2.7.0) [gem]" level="application" />
