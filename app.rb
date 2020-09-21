@@ -4,7 +4,7 @@ require './lib/bookmark'
 class BookmarkManager < Sinatra::Base
 
   get '/' do
-    'Bookmark Manager'
+    erb (:view_index)
   end
 
   get '/bookmarks' do #implemented after first feature test
