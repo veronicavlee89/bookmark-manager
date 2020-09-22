@@ -5,11 +5,3 @@ feature 'Page shows Bookmark Manager' do
   end
 end
 
-feature 'View bookmarks' do #first feature test to see all bookmarks, now go to app.rb (controller) to implement /bookmarks
-  scenario 'show list of bookmarks' do
-    visit('/bookmarks')
-    expect(page).to have_content "http://www.destroyallsoftware.com"
-    expect(page).to have_content "http://www.google.com"
-    expect(page).to have_content "http://www.makersacademy.com"
-  end
-end

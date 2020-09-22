@@ -48,3 +48,7 @@ _I want to save a site title and address to the bookmark manager_
 4. Install PG gem
 5. Connect PG in the self.class - establish connection, check if all the tests pass
   
+  Connect to `psql` and create the `bookmark_manager` and `bookmark_manager_test` databases:
+CREATE DATABASE bookmark_manager;
+CREATE DATABASE bookmark_manager_test;
+To set up the appropriate tables, connect to each database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
