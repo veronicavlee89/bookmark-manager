@@ -10,11 +10,11 @@ _I want to be able to see a list of bookmarks_
 * then implement get '/bookmarks' do (create hard-coded array of bookmark adresses), join to print
 
 
-##1. User requests from Client - Client(Browser) sends GET request to Controller (app.rb) 
+####1. User requests from Client - Client(Browser) sends GET request to Controller (app.rb) 
 
    (get '/' do erb: view_index)
    
-##2. Controller (app.rb) asks the Class Bookmark to get all the bookmarks
+####2. Controller (app.rb) asks the Class Bookmark to get all the bookmarks
 
 * Controller (app.rb) grabs the view of the bookmarks from view_bookmark.erb 
  
@@ -26,11 +26,11 @@ _I want to be able to see a list of bookmarks_
    We can directly access the object and there is no need to create another object/method to access it. 
    It does not pass to any instance of the class.
    
-##3. Bookmark.erb sends html to app.rb 
+####3. Bookmark.erb sends html to app.rb 
 
    (iterate @bookmarks.each do |bookmark|) and shows it using beautiful html
 
-##4. App.rb sends the view to the Client - to User
+####4. App.rb sends the view to the Client - to User
 
 
 
