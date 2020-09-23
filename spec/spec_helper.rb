@@ -1,4 +1,5 @@
 ENV['ENVIRONMENT'] = 'test' 
+ENV['RACK_TEST'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
