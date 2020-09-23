@@ -8,7 +8,8 @@ class BookmarkManager < Sinatra::Base
     #erb (:view_index)
   end
 
-  get '/bookmarks' do #implemented after first feature test
+  get '/bookmarks' do 
+    #implemented after first feature test
     #@bookmarks = [
     #    "https://www.google.com/",
     #    "https://www.gmail.com/"
@@ -22,9 +23,5 @@ class BookmarkManager < Sinatra::Base
     Bookmark.add(params[:title],params[:url]) 
     redirect '/bookmarks'
   end
-
-
-
-
   run! if app_file == $0
 end
