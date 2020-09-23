@@ -4,6 +4,6 @@ feature 'adding bookmarks' do
         fill_in :title, with: "Google Website"
         fill_in :url, with: "https://www.google.com/"
         click_button 'Add Bookmark'
-        expect(page).to have_content "https://www.google.com/"
+        expect(page).to have_content "Google, https://www.google.com/"
     end
 end
