@@ -16,7 +16,7 @@ class BookmarkManager < Sinatra::Base
     #
     # bookmarks.join
     @bookmarks = Bookmark.all
-    erb :view_bookmark
+    erb :view_bookmarks
   end
 
   post '/bookmarks/new' do
@@ -26,6 +26,16 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/delete/:id' do
     Bookmark.delete(params[:id])
+    redirect '/bookmarks'
+  end
+
+  get '/bookmarks/:id' do
+    @bookmark = Bookmark.get(params[:id])
+    erb :view_bookmark
+  end
+
+  post 'bookmarks/update/:id' do
+    Bookmark.update(params[:id], params[:title], params[:url])
     redirect '/bookmarks'
   end
 
