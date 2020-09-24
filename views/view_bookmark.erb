@@ -5,7 +5,7 @@
         <%= bookmark.title %>
       </a>
     </li>
-    <form action='/bookmarks/<%= bookmark.id %>' method='delete'>
+    <form action='/bookmarks/delete/<%= bookmark.id %>' method='post'>
       <input type='submit' value='Delete'>
       </form>
   <% end %>

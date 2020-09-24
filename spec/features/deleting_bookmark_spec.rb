@@ -6,5 +6,6 @@ feature 'deleting bookmarks' do
         visit ('/')
         click_button 'Delete'
         expect(page).not_to have_link("Google", href:"https://www.google.com/")
+        expect(page).to have_current_path('/bookmarks')
     end
 end
