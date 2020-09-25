@@ -6,21 +6,21 @@
       </a>
     </li>
     <form action="/bookmarks/<%= bookmark.id %>/edit" method="get">
-      <input type="submit" id="edit-<%= bookmark.id %>" value="Edit" />
+      <input type="submit" id="edit-<%= bookmark.id %>" value="Edit">
     </form>
     <form action='/bookmarks/<%= bookmark.id %>' method='post'>
-      <input type='hidden' name='_method' value='DELETE' />
-      <input type='submit' id="delete-<%= bookmark.id %>" value='Delete' />
+      <input type='hidden' name='_method' value='DELETE'>
+      <input type='submit' id="delete-<%= bookmark.id %>" value='Delete'>
     </form>
   <% end %>
 </ul><br>
 
 
 <form action='/bookmarks/new' method='post'>
-<label for='title'> Please enter a title for your bookmark: </label><br></br>
-<input type='text' name='title'> <br></br>
-<label for='url'> Please enter a URL: </label><br></br>
-<input type='text' name='url'><br></br>
+<label for='title'> Please enter a title for your bookmark: </label><br>
+<input type='text' name='title'> <br>
+<label for='url'> Please enter a URL: </label><br>
+<input type='text' name='url'><br>
 <input type='submit' value='Add Bookmark'>
 </form>
 

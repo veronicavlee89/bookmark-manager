@@ -1,7 +1,10 @@
 require 'sinatra/base'
 require './lib/bookmark'
+require '../bookmark_veronica/database_connection_setup'
 
 class BookmarkManager < Sinatra::Base
+
+  set :method_override, true
 
   get '/' do
     redirect("/bookmarks")
@@ -14,12 +17,12 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/new' do
     Bookmark.add(params[:title],params[:url])
-    redirect '/bookmarks'
+    redirect '/'
   end
 
   delete '/bookmarks/:id' do
     Bookmark.delete(params[:id])
-    redirect '/bookmarks'
+    redirect '/'
   end
 
   get '/bookmarks/:id/edit' do
@@ -30,7 +33,7 @@ class BookmarkManager < Sinatra::Base
   patch '/bookmarks/:id' do
     p params
     Bookmark.update(params[:id], params[:title], params[:url])
-    redirect '/bookmarks'
+    redirect '/'
   end
 
   run! if app_file == $0
