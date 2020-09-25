@@ -5,11 +5,12 @@
         <%= bookmark.title %>
       </a>
     </li>
-    <form action="/bookmarks/<%= bookmark.id %>" method="get">
-      <input type="submit" id="update-<%= bookmark.id %>" value="Update">
+    <form action="/bookmarks/<%= bookmark.id %>/edit" method="get">
+      <input type="submit" id="edit-<%= bookmark.id %>" value="Edit" />
     </form>
-    <form action='/bookmarks/delete/<%= bookmark.id %>' method='post'>
-      <input type='submit' id="delete-<%= bookmark.id %>" value='Delete'>
+    <form action='/bookmarks/<%= bookmark.id %>' method='post'>
+      <input type='hidden' name='_method' value='DELETE' />
+      <input type='submit' id="delete-<%= bookmark.id %>" value='Delete' />
     </form>
   <% end %>
 </ul><br>

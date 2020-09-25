@@ -5,8 +5,8 @@ feature 'Update bookmark' do
     Bookmark.add('Google','https://www.google.com/')
 
     visit '/'
-    click_button 'Update'
-    expect(page).to have_current_path("/bookmarks/#{Bookmark.all[0].id}")
+    click_button 'Edit'
+    expect(page).to have_current_path("/bookmarks/#{Bookmark.all[0].id}/edit")
     expect(page).to have_field('title', with: 'Google')
     expect(page).to have_field('url', with: 'https://www.google.com/')
 
